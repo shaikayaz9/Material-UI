@@ -1,0 +1,55 @@
+Typography
+Use typography to present your design and content as clearly and efficiently as possible.
+
+Customization
+Adding & disabling variants
+In addition to using the default typography variants, you can add custom ones, or disable any you don't need. See the Adding & disabling variants page for more info.
+
+Changing the semantic element
+The Typography component uses the variantMapping prop to associate a UI variant with a semantic element. It's important to realize that the style of a typography component is independent from the semantic underlying element.
+To change the underlying element for a one-off situation, like avoiding two h1 elements in your page, use the component prop:
+
+<Typography variant="h1" component="h2">
+  h1. Heading
+</Typography>
+
+const theme = createTheme({
+  components: {
+    MuiTypography: {
+      defaultProps: {
+        variantMapping: {
+          h1: 'h2',
+          h2: 'h2',
+          h3: 'h2',
+          h4: 'h2',
+          h5: 'h2',
+          h6: 'h2',
+          subtitle1: 'h2',
+          subtitle2: 'h2',
+          body1: 'span',
+          body2: 'span',
+        },
+      },
+    },
+  },
+});
+
+
+use this code 
+   <Button variant="contained">Hello world</Button>;
+      <Typography variant="h1" gutterBottom>
+        ayaz shaik h1
+      </Typography>
+      <Typography variant="h1" gutterBottom component="h2">
+        ayaz shaik h1
+      </Typography>
+      <Typography variant="h1">ayaz shaik h1</Typography>
+      <Typography variant="h2">ayaz shaik h2</Typography>
+      <Typography variant="h3">ayaz shaik h3</Typography>
+      <Typography variant="h4">ayaz shaik h4</Typography>
+      <Typography variant="h5">ayaz shaik h5</Typography>
+      <Typography variant="h6">ayaz shaik h6</Typography>
+      <Typography variant="subtitle1">ayaz shaik subtitle1</Typography>
+      <Typography variant="subtitle2">ayaz shaik subtitle1</Typography>
+      <Typography variant="p">ayaz shaik p</Typography>
+      <Typography variant="button">ayaz shaik btn</Typography>
