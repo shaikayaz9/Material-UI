@@ -1,0 +1,40 @@
+Material UI - Overview
+Material UI is an open-source React component library that implements Google's Material Design. It's comprehensive and can be used in production out of the box.
+
+**Advantages of Material UI
+
+1) Ship faster
+2) Beautiful by default
+3) Customizability
+4) Cross-team collaboration
+5) Trusted by thousands of organizations
+
+Installation :
+
+Installation
+Install Material UI, the world's most popular React UI framework. 
+
+run this code
+npm install @mui/material @emotion/react @emotion/styled
+
+Roboto font
+Material UI uses the Roboto font by default. Add it to your project via Fontsource, or with the Google Fonts CDN.
+npm install @fontsource/roboto
+
+Google Web Fonts
+To install Roboto through the Google Web Fonts CDN, add the following code inside your project's <head /> tag
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+/>
+
+Icons 
+To use the font Icon component or the prebuilt SVG Material Icons (such as those found in the icon demos), you must first install the Material Icons font. You can do so with npm, or with the Google Web Fonts CDN.
+npm install @mui/icons-material
+
+
+
+
+
